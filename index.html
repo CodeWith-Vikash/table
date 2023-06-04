@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        body {
+            color: white;
+            font-size: 25px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            margin-top:90px ;
+        }        
+        table {
+            text-align: center;
+            height: 350px;
+            width: 550px;
+        }
+        .vidio{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        /* Responsive design */
+        @media(max-width:425px){
+            body {
+            font-size: 15px;
+        }
+        .container{
+            margin-top:80px ;
+            padding: 30px;
+        }        
+        table {
+            height: 250px;
+            width: 450px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay loop muted plays-inline class="vidio">
+        <source src="pexels-pixabay-856309-1920x1080-30fps.mp4">
+    </video>
+    <div class="container">
+        <table border="2">
+            <tr>
+                <th>Roll no.</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Age</th>
+                <th>Experience</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Vikash</td>
+                <td>Frontend dev</td>
+                <td>19</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pritam</td>
+                <td>Frontend dev</td>
+                <td>19</td>
+                <td>Beginer</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Gautam</td>
+                <td>c++/DSA</td>
+                <td>18</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Abhijit</td>
+                <td>Java dev</td>
+                <td>20</td>
+                <td>Intermediate</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
